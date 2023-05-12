@@ -3,9 +3,8 @@ layout: home
 title: chDB
 ---
 
-<div align="center">
-  <img src="docs/_static/snake-chdb.png" height="100">
-</div>
+<img src="https://github.com/chdb-io/chdb/raw/pybind/docs/_static/snake-chdb.png" height="100">
+
 
 [![Build](https://github.com/auxten/chdb/actions/workflows/build_wheels.yml/badge.svg?branch=pybind)](https://github.com/auxten/chdb/actions/workflows/build_wheels.yml)
 [![PyPI](https://img.shields.io/pypi/v/chdb.svg)](https://pypi.org/project/chdb/)
