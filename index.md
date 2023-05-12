@@ -5,16 +5,12 @@ title: chDB
 
 <img src="https://github.com/chdb-io/chdb/raw/pybind/docs/_static/snake-chdb.png" height="100">
 
+> chDB is an embedded SQL OLAP Engine powered by ClickHouse
 
 [![Build](https://github.com/auxten/chdb/actions/workflows/build_wheels.yml/badge.svg?branch=pybind)](https://github.com/auxten/chdb/actions/workflows/build_wheels.yml)
-[![PyPI](https://img.shields.io/pypi/v/chdb.svg)](https://pypi.org/project/chdb/)
-[![Monthly Downloads](https://pepy.tech/badge/chdb/month)](https://pepy.tech/project/chdb)
 [![Discord](https://img.shields.io/discord/1098133460310294528?logo=Discord)](https://discord.gg/Njw5YXSPPc)
 [![Twitter](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&label=Twitter)](https://twitter.com/auxten)
 
-# chDB
-
-> chDB is an embedded SQL OLAP Engine powered by ClickHouse
 
 ## Features
      
@@ -38,7 +34,7 @@ import chdb
 res = chdb.query('select version()', 'Pretty'); print(res.data())
 ```
 
-### Run in library
+### Run using chdb library
 
 Experimental `chdb` binding examples: 
 
@@ -49,20 +45,20 @@ Experimental `chdb` binding examples:
 
 Please install the latest libchdb dynamic library _(amd64 only)_
 
-#### :package: Debian Repository
+#### Debian Repository
 ```
 wget -qO- https://chdb-io.github.io/chdb-io.gpg | sudo tee /etc/apt/trusted.gpg.d/chdb-io.gpg >/dev/null
 echo "deb [arch=all signed-by=/etc/apt/trusted.gpg.d/chdb-io.gpg] https://chdb-io.github.io/deb stable main" | sudo tee /etc/apt/sources.list.d/chdb-io.list >/dev/null
 apt update && apt install libchdb
 ```
 
-#### :package: RPM Repository
+#### RPM Repository
 ```
 wget -qO- https://chdb-io.github.io/chdb-io.repo | sudo tee /etc/yum.repos.d/chdb-io.repo >/dev/null
 yum install -y libchdb
 ```
 
-#### :package: Manual
+#### Manual
 ```
 wget https://github.com/metrico/libchdb/releases/latest/download/libchdb.zip
 unzip libchdb_amd64.zip
