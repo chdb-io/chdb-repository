@@ -1,0 +1,15 @@
+title: chdb
+email: info@chdb.io
+description: >- 
+  chdb home + package repository
+baseurl: ""
+url: "https://chdb-io.github.io"
+github_username: chdb-io
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+exclude:
+  - tools/
+  - doc/
