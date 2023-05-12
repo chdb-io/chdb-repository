@@ -3,4 +3,4 @@ name=chdb-io
 baseurl=https://chdb-io.github.io/rpm
 enabled=1
 gpgcheck=1
-gpgkey=https://chdb-io.github.io/chdb-io.gpg
+gpgkey=https://chdb-io.github.io/chdb-io.asc
