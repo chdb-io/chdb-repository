@@ -38,6 +38,7 @@ res = chdb.query('select version()', 'Pretty'); print(res.data())
 
 Experimental `chdb` binding examples: 
 
+* [chdb-python](https://github.com/chdb-io/chdb)
 * [chdb-go](https://github.com/chdb-io/chdb-go)
 * [chdb-node](https://github.com/chdb-io/chdb-node)
 * [chdb-bun](https://github.com/chdb-io/chdb-bun)
