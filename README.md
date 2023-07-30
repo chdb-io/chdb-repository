@@ -1,35 +1,58 @@
-<img src="https://github.com/chdb-io/chdb/raw/pybind/docs/_static/snake-chdb.png" />
+<a href="https://chdb.fly.dev" target="_blank">
+  <img src="https://github.com/chdb-io/chdb/raw/pybind/docs/_static/snake-chdb.png" height=150 />
+</a>
 
-## 📦 [chdb package repo](https://chdb-io.github.io)
-
-[![Debian and RPM Repo](https://github.com/chdb-io/chdb-io.github.io/actions/workflows/repo.yml/badge.svg)](https://github.com/chdb-io/chdb-io.github.io/actions/workflows/repo.yml)
-
-This `deb`/`rpm` repository is powered by [Github Actions](https://github.com/chdb-io/chdb.github.io/tree/main/.github), [Github Pages](https://jon.sprig.gs/blog/post/2835) and [nfpm](https://nfpm.goreleaser.com/)
-
-<!-- update: 202305111130 -->
+> chDB is an embedded SQL OLAP Engine powered by ClickHouse
 
 <br>
 
-### Library Installation _(amd64)_
+## chDB
 
-#### :package: Debian Repository
+#### Python
 ```
-wget -qO- https://chdb-io.github.io/chdb-io.gpg | sudo tee /etc/apt/trusted.gpg.d/chdb-io.gpg >/dev/null
-echo "deb [arch=all signed-by=/etc/apt/trusted.gpg.d/chdb-io.gpg] https://chdb-io.github.io/deb stable main" | sudo tee /etc/apt/sources.list.d/chdb-io.list >/dev/null
-apt update && apt install libchdb
+pip install chdb --upgrade
 ```
 
-#### :package: RPM Repository
-```
-wget -qO- https://chdb-io.github.io/chdb-io.repo | sudo tee /etc/yum.repos.d/chdb-io.repo >/dev/null
-yum install -y libchdb
+<br>
+
+## libchDB
+
+#### Packages
+Install `libchdb` on any `deb` or `rpm` based operating system:
+
+##### :package: Debian Repository
+```bash
+sudo bash -c 'curl -s https://packagecloud.io/install/repositories/auxten/chdb/script.deb.sh | os=any dist=any bash'
+sudo apt install libchdb
 ```
 
-#### :package: Manual
+##### :package: RPM Repository
+```bash
+sudo bash -c 'curl -s https://packagecloud.io/install/repositories/auxten/chdb/script.rpm.sh | os=rpm_any dist=rpm_any bash'
+sudo yum install -y libchdb
 ```
+
+
+<br>
+
+
+
+### :package: Installation
+Install `libchdb` manually on `x64` or `arm64` Linux platforms:
+
+
+#### Linux
+##### x86_64
+```bash
 wget https://github.com/metrico/libchdb/releases/latest/download/libchdb.zip
-unzip libchdb_amd64.zip
+unzip libchdb.zip
 mv libchdb.so /usr/lib/libchdb.so
 ```
-
+##### arm64
+```bash
+wget https://github.com/metrico/libchdb/releases/latest/download/libchdb_arm64.zip
+unzip libchdb_arm64.zip
+mv libchdb.so /usr/lib/libchdb.so
+```
 <br>
+
