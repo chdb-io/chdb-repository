@@ -1,5 +1,5 @@
 <a href="https://chdb.fly.dev" target="_blank">
-  <img src="https://github.com/chdb-io/chdb/raw/pybind/docs/_static/snake-chdb.png" height=150 />
+  <img src="https://github.com/chdb-io/chdb/raw/main/docs/_static/snake-chdb.png" height=150 />
 </a>
 
 > chDB is an embedded SQL OLAP Engine powered by ClickHouse
